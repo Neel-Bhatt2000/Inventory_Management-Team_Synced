@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	<title>
+		Table
+	</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/inventory.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+	    <div class="head">
+	      <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Assam_Police_badge.png">
+	      <h1>Assam Police</h1>
+	      <button type="button" class ="in"><a href="login.html">logout</a></button>
+	    </div>
+  	</header>
+  <nav id="sidenav" style="height:1250px;">
+    <ul>
+      <li>
+        <section class="home">
+          <div class="inner">
+            <img  src="https://www.iconfinder.com/data/icons/people-avatar-part-3-1/512/4-512.png"/>
+            <h3>Abhinandan Singh</h3>
+            <p style="width: 200px;color: black">-----------------------------------------------</p>
+          </div>
+        </section>
+      </li>
+      <li><a href="add_item.html">Add Item</a></li>
+      <li><a href="delete_item.html">Remove Item</a></li>
+      <li><a href="product_details.html">Product Details</a></li>
+      <li><a href="issue.html">Issue Item</a></li>
+      <li><a href="issued_by.html">Issued Reports</a></li>
+    </ul>
+  </nav>
+  <h1>Issued Reports</h1>
+  	<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+	<hr>
+	<div>
+	<table  class="tabular" cellspacing="0"; cellpadding="10";>
+		<caption>Weapons</caption>
+		<tr>
+		<th class="name_width">Product name</th>
+		<th class="despcription_width">Police id</th>
+		<th class="width">Quantity</th>
+		<th class="width">Date-Time</th>
+		<th class="width">Issued by</th>
+		</tr>
+		<tr class="white">
+			<td>Rifles</td>
+			<td>A1900001</td>
+			<td>5</td>
+			<td>27/03/2020</td>
+			<td>B.K. Mishra</td>
+		</tr>
+		<tr class="grey">
+			<td>Machine guns</td>
+			<td>A1900002</td>
+			<td>7</td>
+			<td>29/03/2020</td>
+			<td>Deepak Kr. Kedia</td>
+		</tr>
+		<tr class="white">
+			<td>Revolvers</td>
+			<td>A1900003</td>
+			<td>7</td>
+			<td>30/03/2020</td>
+			<td>Nitul Gogoi</td>
+		</tr>
+		<tr class="grey">
+			<td>Anti-tank mines</td>
+			<td>A1900004</td>
+			<td>7</td>
+			<td>30/04/2020</td>
+			<td>Krishna Das</td>
+		</tr>
+	</table>
+</div>
+	<div>
+	<table  class="tabular" cellspacing="0"; cellpadding="10";>
+		<caption>Medical</caption>
+		<tr>
+		<th class="name_width">Product Name</th>
+		<th class="despcription_width">Police id</th>
+		<th class="width">Quantity</th>
+		<th class="width">Date-Time</th>
+		<th class="width">Issued by</th>
+		</tr>
+		<tr class="white">
+			<td>Licin MR</td>
+			<td>A1900008</td>
+			<td>5</td>
+			<td>27/04/2020</td>
+			<td>Diganata Narah</td>
+		</tr>
+		<tr class="grey">
+			<td>Aspirin</td>
+			<td>A1900007</td>
+			<td>7</td>
+			<td>20/05/2020</td>
+			<td>Gaurav Upadhyay</td>
+		</tr>
+		<tr class="white">
+			<td>Injection</td>
+			<td>A1900006</td>
+			<td>2</td>
+			<td>03/03/2020</td>
+			<td>Mahesh Chand Sharma</td>
+		</tr>
+		<tr class="grey">
+			<td>Adderall</td>
+			<td>A1900005</td>
+			<td>9</td>
+			<td>21/04/2020</td>
+			<td>Shinde Gaurav</td>
+		</tr>
+	</table>
+</div>
+	<div>
+	<table  class="tabular" cellspacing="0"; cellpadding="10";>
+		<caption>Vehicle</caption>
+		<tr>
+		<th class="name_width">Product Name</th>
+		<th class="despcription_width">Police id</th>
+		<th class="width">Quantity</th>
+		<th class="width">Date-Time</th>
+		<th class="width">Issued by</th>
+		</tr>
+		<tr class="white">
+			<td>Jeep</td>
+			<td>A1900018</td>
+			<td>5</td>
+			<td>27/04/2020</td>
+			<td>Chandu Anand</td>
+		</tr>
+		<tr class="grey">
+			<td>Truck</td>
+			<td>A1900017</td>
+			<td>7</td>
+			<td>20/05/2020</td>
+			<td>Chandrashekar sharma</td>
+		</tr>
+		<tr class="white">
+			<td>Car</td>
+			<td>A1900011</td>
+			<td>2</td>
+			<td>03/03/2020</td>
+			<td>Rajiv Bhatt</td>
+		</tr>
+		<tr class="grey">
+			<td>Bike</td>
+			<td>A1900010</td>
+			<td>9</td>
+			<td>01/04/2020</td>
+			<td>Giri Shetty</td>
+		</tr>
+	</table>
+</div>
+	<div>
+	<table  class="tabular" cellspacing="0"; cellpadding="10";>
+		<caption>Furniture</caption>
+		<tr>
+		<th class="name_width">Product Name</th>
+		<th class="despcription_width">Police id</th>
+		<th class="width">Quantity</th>
+		<th class="width">Date-Time</th>
+		<th class="width">Issued by</th>
+		</tr>
+		<tr class="white">
+			<td>Chair</td>
+			<td>A1907098</td>
+			<td>5</td>
+			<td>27/04/2020</td>
+			<td>Pratiksha Laldas</td>
+		</tr>
+		<tr class="grey">
+			<td>Bench</td>
+			<td>A1900607</td>
+			<td>7</td>
+			<td>20/05/2020</td>
+			<td>Neel Bhatt</td>
+		</tr>
+		<tr class="white">
+			<td>Wardrobe</td>
+			<td>A1933006</td>
+			<td>2</td>
+			<td>03/03/2020</td>
+			<td>Kaushik Iyer</td>
+		</tr>
+		<tr class="grey">
+			<td>Sofa</td>
+			<td>A1901205</td>
+			<td>9</td>
+			<td>11/07/2020</td>
+			<td>Sailesh Sir</td>
+		</tr>
+	</table>
+</div>
+</body>
+</html>

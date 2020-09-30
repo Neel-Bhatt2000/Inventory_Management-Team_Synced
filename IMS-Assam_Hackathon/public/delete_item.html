@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	 <meta charset="utf-8">
+	<title>
+		Add item
+	</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/delete_item.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+    <div class="head">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Assam_Police_badge.png">
+      <h1>Assam Police</h1>
+      <button type="button" class ="in"><a href="login.html">logout</a></button>
+    </div>
+  </header>
+  <nav id="sidenav" style="height: 100vh;">
+    <ul>
+      <li>
+        <section class="home">
+          <div class="inner">
+            <img  src="https://www.iconfinder.com/data/icons/people-avatar-part-3-1/512/4-512.png"/>
+            <h3>Abhinandan Singh</h3>
+            <p style="width: 200px;color: black">-----------------------------------------------</p>
+          </div>
+        </section>
+      </li>
+      <li><a href="add_item.html">Add Item</a></li>
+      <li><a href="delete_item.html">Remove Item</a></li>
+      <li><a href="product_details.html">Product Details</a></li>
+      <li><a href="issue.html">Issue Item</a></li>
+      <li><a href="issued_by.html">Issued Reports</a></li>
+    </ul>
+  </nav>
+  <h1>Manage Your Inventory</h1>
+	<hr>
+	<div class="boxed">
+		<form>
+			<fieldset>
+				<legend>Remove Item(s)</legend>
+					<b>Name</b><br>
+					<input type="text" placeholder="Enter text"><br>
+					<br><b>Category</b><br>
+					<select id="Type" name="type">
+					<option value="Furniture">Furniture</option>
+					<option value="Medicine">Medicine</option>
+					<option value="Vehicle">Vehicle</option>
+					<option value="Weapon">Weapon</option>
+					</select><br>
+					<br><b>Quantity</b><br>
+					<input type="number" id="num" min="1" max="10000000000" placeholder="Item Quantity"><br>
+
+					<br><b>Removed By</b><br>
+					<input type="text" placeholder="Enter text"><br>
+					<br><b>Date</b><br>
+					<input type="date" id="date"><br>
+					<br>
+					<a href="#">
+					<button class="button">Remove</button>
+				</a>
+					<input type="reset" name="r" value="Reset" class="reset"><br>
+			</fieldset>
+		</form>
+	</div>	
+</body>
+</html>

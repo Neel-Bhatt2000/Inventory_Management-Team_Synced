@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IMS-Inventory Management System</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/inventory.css">
+  <link rel="stylesheet" type="text/css" href="css/product_details.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Assam_Police_badge.png">
+      <h1>Assam Police</h1>
+      <button type="button" class="in" style="text-decoration: none;"><a href="login.html">logout</a></button>
+    </div>
+  </header>
+  <nav id="sidenav" style="height: 1300px;">
+    <ul>
+      <li>
+        <section class="home">
+          <div class="inner">
+            <img src="https://www.iconfinder.com/data/icons/people-avatar-part-3-1/512/4-512.png" />
+            <h3>Abhinandan Singh</h3>
+            <p style="width: 200px;color: black">-----------------------------------------------</p>
+          </div>
+        </section>
+      </li>
+      <li><a href="add_item.html">Add Item</a></li>
+      <li><a href="delete_item.html">Remove Item</a></li>
+      <li><a href="product_details.html">Product Details</a></li>
+      <li><a href="issue.html">Issue Item</a></li>
+      <li><a href="issued_by.html">Issued Reports</a></li>
+    </ul>
+  </nav>
+  <h1>Product Details</h1>
+  <form class="example">
+    <!-- <input type="text" placeholder="Search.." name="search"> -->
+    <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+    <select id="product_category" style="font-size:2rem;" onchange="change_cat();">
+      <option selected>Choose...</option>
+      <option value="weapon">Weapon</option>
+      <option value="vehicle">Vehicle</option>
+      <option value="furniture">Furniture</option>
+      <option value="medicine">Medicine</option>
+      <option value="other">Other</option>
+    </select>
+  </form>
+
+  <hr>
+  <div>
+    <table class="tabular" cellspacing="0" ; cellpadding="10" ;>
+      <caption id="table_title"></caption>
+      <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+        <table class="table my-0" id="myTable">
+
+        </table>
+      </div>
+
+    </table>
+  </div>
+
+  <script src="http://inventory-database-c1c1a.firebaseapp.com/__/firebase/7.15.5/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="http://inventory-database-c1c1a.firebaseapp.com/__/firebase/7.15.5/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="https://inventory-database-c1c1a.firebaseapp.com/__/firebase/init.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+
+  <script src="js/databaseConfing.js"></script>
+  <script src="js/product_details.js"></script>
+</body>
+
+</html>

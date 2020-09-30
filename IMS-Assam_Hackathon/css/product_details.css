@@ -1,0 +1,64 @@
+.name_width{
+  width:13%;
+}
+.despcription_width{
+  width:10%;
+}
+.quantity_width{
+width:10%;
+}
+.supp_name_width{
+  width:15%;
+}
+.supp_add_width{
+  width:15%;
+}
+.date_width{
+  width:10%;
+}
+.available_width{
+  width:15%;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 8px 13px;
+  font-size: 10px;
+  border: 1px solid grey;
+  float: right;
+  width: 10%;
+  background: #f1f1f1;
+  margin-right:33px;
+}
+
+/* Style the submit button */
+form.example button {
+ 
+  float: right;
+  width: 4%;
+  padding: 8px;
+  background: #2196F3;
+  color: white;
+  font-size: 10px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+form{
+margin-top:-42px;
+margin-left:490px;
+}

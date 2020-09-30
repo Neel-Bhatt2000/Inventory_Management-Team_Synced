@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    Add item
+  </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/add_item.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Assam_Police_badge.png">
+      <h1>Assam Police</h1>
+      <button type="button" class="in"><a href="login.html">logout</a></button>
+    </div>
+  </header>
+  <nav id="sidenav" style="height:1100px;">
+    <ul>
+      <li>
+        <section class="home">
+          <div class="inner">
+            <img src="https://www.iconfinder.com/data/icons/people-avatar-part-3-1/512/4-512.png" />
+            <h3 id="user_name">Abhinandan Singh</h3>
+            <p style="width: 200px;color: black">-----------------------------------------------</p>
+          </div>
+        </section>
+      </li>
+      <li><a href="add_item.html">Add Item</a></li>
+      <li><a href="delete_item.html">Remove Item</a></li>
+      <li><a href="product_details.html">Product Details</a></li>
+      <li><a href="issue.html">Issue Item</a></li>
+      <li><a href="issued_by.html">Issued Reports</a></li>
+    </ul>
+  </nav>
+  <h1>Manage Your Inventory</h1>
+  <hr>
+  <div class="boxed">
+    <form method="dialog">
+      
+      <fieldset>
+        <legend>Add Item(s)</legend>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="product_name">Product Name</label>
+              <input type="text" class="form-control" id="product_name" placeholder="What's the product?">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="product_desc">Description</label>
+              <input type="text" class="form-control" id="product_desc" placeholder="Describe color, size, model number etc.">
+            </div>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="product_category">Catogory</label>
+            <select id="product_category" class="form-control">
+              <option selected>Choose...</option>
+              <option id="weapon">Weapon</option>
+              <option id="vehicle">Vehicle</option>
+              <option id="furniture">Furniture</option>
+              <option id="medicine">Medicine</option>
+              <option id="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="product_supplier_name">Suplier Name</label>
+            <input type="text" class="form-control" id="product_supplier_name" placeholder="">
+          </div>
+          <div class="form-group col-md-8">
+            <label for="product_supplier_address">Suplier Address</label>
+            <input type="text" class="form-control" id="product_supplier_address" placeholder="Shop name, region, city, state..">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="product_quantity">Quantity</label>
+              <input type="text" class="form-control" id="product_quantity" onchange="updatePrice();">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product_rate">Rate of one unit</label>
+              <input type="text" class="form-control" id="product_rate" onchange="updatePrice();">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product_total_price">Total Price</label>
+              <input type="text" class="form-control" disabled="true" id="product_total_price">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputZip"></label><br>
+              <button type="submit" class="submit" onclick="verify_data();">Add Item</button>
+              <input type="reset" name="r" value="Reset" class="reset"><br> 
+            </div>
+          </div>
+        </form>
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="http://inventory-database-c1c1a.firebaseapp.com/__/firebase/7.15.5/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="http://inventory-database-c1c1a.firebaseapp.com/__/firebase/7.15.5/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="https://inventory-database-c1c1a.firebaseapp.com/__/firebase/init.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+
+  <script src="js/databaseConfing.js"></script>
+  <script src="js/addProduct.js"></script>
+</body>
+
+</html>
